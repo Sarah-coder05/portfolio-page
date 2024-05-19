@@ -1,0 +1,380 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: inter;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 1300px;
+  margin: auto;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+#main {
+    padding: 2em 1em;
+}
+
+.note{
+  line-height: 25px;
+  margin-top: 1em;
+}
+
+hr {
+  margin: 2.5em 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.tailorflow {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+  color: #003435;
+}
+
+.header-list{
+  display: none;
+}
+
+.past-projects {
+  text-align: center;
+  font-size: 30px;
+}
+
+.linestyle {
+  display: flex;
+  gap: .5em;
+  margin: .6em 0 0 0;
+  width: 250px;
+}
+
+.lineheight {
+  width: 17px;
+  height: 1px;
+  align-self: center;
+  background-color: #98a2b3;
+}
+
+.skincare-brand{
+  margin: 0px;
+  font-size: 30px;
+}
+
+.arrow-image {
+  width: 24px;
+  height: 24px;
+}
+
+.view-project {
+  margin: 0;
+  font-size: .85em;
+}
+
+.view {
+  width: 109px;
+  padding: 0px;
+  border-bottom: 1px solid;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  gap: 3px;
+  margin: 2.2em 0 0 0;
+}
+
+.about-me {
+  font-size: 1em;
+}
+
+.routine_img-ctn {
+  margin-bottom: 2em;
+}
+
+.routine_ctn {
+  width: 95%;
+  overflow: hidden;
+  padding: 0;
+  margin: auto;
+}
+
+.routines {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 2.2em;
+}
+
+.core-image {
+  width: 50px;
+  height: 50px;
+}
+
+.soft_skill {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.work-skills{
+  padding-bottom: 30px;
+}
+
+.work-skills > h2{
+  padding-bottom: 1em;
+}
+
+.article-news > h2 {
+  margin-top: 2.5em;
+}
+
+.article-redesign{
+  padding-top: 30px;
+}
+
+.working-page-top > h2 {
+  line-height: 1.2em;
+  font-size: 2.5em;
+  width: 95%;
+}
+
+.working-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.next-button{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: 1px solid #667085;
+  padding: 15px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #667085;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+  margin-bottom: 2em;
+}
+
+.follow-me {
+  font-size: 1.5em;
+  letter-spacing: .05em;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  margin-bottom: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+}
+
+.footer-up, .footer-down {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1em;
+}
+
+.copy-right {
+  margin-top: 1.5em;
+  font-size: .9em;
+  color: #344054;
+}
+
+@media (min-width: 767px){
+  body {
+    font-family: inter;
+    padding-left: 30px;
+    width: 90%;
+  }
+
+  .header-list{
+    display: none;
+  }
+
+  .menu-icon{
+    display: block;
+  }
+
+  .header-icons {
+    text-decoration: none;
+    color: #1d2939;
+  }
+
+  li {
+    list-style: none;
+  }
+ 
+  .working-page {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .working-page-top {
+    width: 55%;
+  }
+
+  .website-redesign {
+    justify-content: space-between;
+  }
+
+  .next-button{
+    margin-left: 450px;
+  }
+
+  .follow, .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-down {
+    width: 40%;
+  }
+}
+
+@media (min-width: 991px){
+  body {
+    width: 95%;
+  }
+  
+  .header-icons {
+    text-decoration: none;
+    color: #1d2939;
+  }
+  li {
+    list-style: none;
+  }
+  .header-list{
+    display: flex;
+    padding: 0px;
+  }
+  .menu-icon{
+    display: none;
+  }
+  .website-redesign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+  }
+  .article-redesign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 200px;
+  }
+
+  .article-news{
+    display: flex;
+    justify-content: space-around;
+    gap: 550px;
+    padding-right: 30px;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    gap: 3px;
+  }
+  .skincare-brand{
+    margin: 0px
+  }
+  .skincare-redesign{
+    display: flex;
+  }
+  .redesign{
+    padding-top: 100px;
+  }
+  .core{
+    display: flex;
+    padding: 50px 20px;
+    gap: 30px;
+    text-align: justify;
+  
+  }
+
+  .working-together {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+  }
+
+}
+
+@media (min-width: 1240px){
+
+  .routine_ctn {
+    width: 50%;
+  }
+
+  .hard {
+    width: 50%;
+  }
+
+  .routine_txt {
+    width: 45%;
+  }
+
+  .follow{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,297 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: inter;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 1300px;
+  margin: auto;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+#portfoliomain {
+    padding: 2em .8em;
+}
+
+.note{
+    line-height: 25px;
+}
+
+
+hr {
+  margin: 2.5em 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.tailorflow {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    color: #003435;
+}
+.header-list{
+    display: none;
+}
+.portfolio-picture{
+    width: 350px;
+    height: 400px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    gap: 1em;
+}
+
+.hero_top {
+    text-align: center;
+}
+
+.hero_top > h2 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.hero_bottom {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hero_bottom > p {
+    padding: .5em .7em;
+    width: 105px;
+    text-align: center;
+}
+
+.portfolio_item {
+    margin: 2em 0;
+}
+
+.portfolio_item-img {
+    width: 98%;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+}
+
+.portfolio-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.branding{
+    border: 1px solid #d9d9d9;
+    background-color: #f2f4f7;
+   
+}
+.projects{
+    color: white;
+    background-color: black;
+}
+.uiux{
+    border: 1px solid #d9d9d9;
+    background-color: #f2f4f7;
+}
+.industrial{
+    border: 1px solid #d9d9d9;
+    background-color: #f2f4f7;
+}
+
+.linestyle {
+  display: flex;
+  gap: .5em;
+  margin: .6em 0 0 0;
+  width: 170px;
+  color: #98A2B3;
+}
+
+.lineheight {
+  width: 17px;
+  height: 1px;
+  align-self: center;
+  background-color: #98a2b3;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+  margin-bottom: 2em;
+}
+
+.follow-me {
+  font-size: 1.5em;
+  letter-spacing: .05em;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  margin-bottom: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+}
+
+.footer-up, .footer-down {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1em;
+}
+
+.copy-right {
+  margin-top: 1.5em;
+  font-size: .9em;
+  color: #344054;
+}
+
+@media (min-width: 470px) {
+    .hero_bottom > p {
+        width: 150px;
+    }
+}
+
+@media (min-width: 767px){
+    #portfoliomain {
+        padding: 2em;
+    }
+
+    .header-list{
+      display: none;
+    }
+    .menu-icon{
+      display: block;
+    }
+    .header-icons {
+      text-decoration: none;
+      color: #1d2939;
+    }
+
+    .hero_bottom > p {
+        width: 130px;
+    }
+    
+    .follow {
+        margin: 5em 0;
+        gap: 1em;
+    }
+
+    .follow, .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-down {
+        width: 40%;
+    }
+}
+
+@media (min-width: 991px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding-right: 30px;
+    }
+    .header-icons {
+        text-decoration: none;
+        color: #1d2939;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .header-list{
+        display: flex;
+        padding: 0px;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+   .portfolio-image{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+   }
+    
+   .portfolio_item {
+        width: 45%;
+   }
+   
+}
+
+@media (min-width: 1240px) {
+    .portfolio-picture{
+        width: 580px;
+        height: 500px;
+    }
+    .portfolio{
+        padding: 0px 250px;
+    }
+
+     .follow{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        gap: 50px;
+    }
+}
